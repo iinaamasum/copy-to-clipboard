@@ -7,6 +7,7 @@ console.log(inputText);
 
 submitText.onclick = () => {
     submitText.innerHTML = `COPIED`;
+    submitText.style.backgroundColor = "green";
     inputText.select();
     document.execCommand('copy');
 }
